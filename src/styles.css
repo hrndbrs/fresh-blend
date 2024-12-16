@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-montserrat;
+  }
+
+  html {
+    @apply overscroll-none;
+
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .grid-stack {
+    @apply grid;
+
+    & > * {
+      grid-area: 1/1;
+    }
+  }
+
+  .no-scrollbar {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    & {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}

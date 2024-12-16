@@ -1,0 +1,25 @@
+<div class="px-5 py-3">
+  <nav class="mx-auto grid max-w-7xl grid-cols-4 gap-4">
+    <div>
+      <span class="iconify size-16 carbon--3d-print-mesh"></span>
+    </div>
+    <ul class="col-span-2 flex flex-1 items-center justify-center gap-8">
+      @for (link of navLinks; track link) {
+        <li>
+          <a
+            class="rounded-lg px-5 py-2 font-medium text-green-950 transition-all duration-300 hover:bg-green-100"
+            [href]="link.href"
+            >{{ link.label }}</a
+          >
+        </li>
+      }
+    </ul>
+    <div class="flex items-center justify-end">
+      <button
+        class="inline-flex w-full max-w-48 items-center justify-center gap-2 rounded-full bg-orange-500 px-4 py-2 font-semibold text-white transition-colors duration-300 hover:bg-orange-400"
+      >
+        Order Now
+      </button>
+    </div>
+  </nav>
+</div>

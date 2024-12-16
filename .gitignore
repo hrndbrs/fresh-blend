@@ -44,3 +44,7 @@ Thumbs.db
 # Package Manager
 bun.lockb
 package-lock.json
+
+# Environment Variables
+.env
+.env*.local

@@ -1,0 +1,18 @@
+@let illustrationTemplate = illustration();
+@let appendImage = imagePosition() === 'back';
+
+@if (illustrationTemplate && !appendImage) {
+  <figure>
+    <ng-container *ngTemplateOutlet="illustrationTemplate"></ng-container>
+  </figure>
+}
+
+<div [class]="bodyClass()">
+  <ng-content></ng-content>
+</div>
+
+@if (illustrationTemplate && appendImage) {
+  <figure>
+    <ng-container *ngTemplateOutlet="illustrationTemplate"></ng-container>
+  </figure>
+}
