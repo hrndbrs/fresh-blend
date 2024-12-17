@@ -43,7 +43,7 @@ export class Navbar {
       label: 'Products',
     },
     {
-      href: '/#contact',
+      href: '#contact',
       label: 'Contact Us',
     },
   ];

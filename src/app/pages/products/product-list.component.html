@@ -1,0 +1,38 @@
+<section class="px-5 py-32">
+  <div class="mx-auto max-w-7xl">
+    <div class="mx-auto mb-14 flex max-w-2xl flex-col gap-3 text-center">
+      <h1 class="flex items-center justify-center text-4xl font-bold">
+        Ready to Sip
+        <span class="font-style text-7xl text-lime-500">Freshness</span>?
+      </h1>
+      <p>
+        Browse through our juicy lineup, pick your favorite blends, and give
+        your day a splash of flavor!
+      </p>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-10">
+      @for (product of products; track product.id) {
+        <card class="w-full max-w-96 shrink-0">
+          <ng-template #illustration>
+            <img
+              [src]="product.thumbnail"
+              class="aspect-video w-full rounded-lg object-cover object-center"
+              [alt]="product.name"
+            />
+          </ng-template>
+          <h5 class="text-xl font-semibold">{{ product.name }}</h5>
+          <p class="line-clamp-2 h-10">{{ product.description }}</p>
+          <p class="text-lg text-orange-600">
+            {{ product.price | currency: 'IDR' : 'symbol' : '1.0' }}
+          </p>
+        </card>
+      }
+    </div>
+    <pagination
+      class="mt-12 justify-center"
+      [totalPages]="totalPages"
+      (pageChange)="fetchProducts($event)"
+    ></pagination>
+  </div>
+</section>

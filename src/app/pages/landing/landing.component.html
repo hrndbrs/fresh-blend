@@ -3,7 +3,7 @@
 
 <div class="flex min-h-svh items-center px-5 py-32">
   <div class="mx-auto grid max-w-7xl gap-8">
-    <h2 class="font-style text-center text-6xl font-semibold">
+    <h2 class="text-center font-style text-6xl font-semibold">
       Popular Products
     </h2>
     <div class="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto">
@@ -17,7 +17,7 @@
             />
           </ng-template>
           <h5 class="text-xl font-semibold">{{ product.name }}</h5>
-          <p class="line-clamp-2 h-12">{{ product.description }}</p>
+          <p class="line-clamp-2 h-10">{{ product.description }}</p>
           <p class="text-lg text-orange-600">
             {{ product.price | currency: 'IDR' : 'symbol' : '1.0' }}
           </p>

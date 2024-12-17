@@ -1,0 +1,7 @@
+.pagination-item {
+  @apply flex size-8 shrink-0 items-center justify-center transition-colors duration-300;
+}
+
+.pagination-item:hover {
+  @apply text-sky-400;
+}

@@ -17,7 +17,7 @@ export default class ProductController {
     const [products, totalRows, totalPages] = getPagination({
       data,
       page: +page,
-      limit,
+      limit: +limit,
     });
 
     res.status(HttpSuccessCode.OK).json({

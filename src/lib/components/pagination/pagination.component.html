@@ -1,0 +1,32 @@
+@let curr = currentPage();
+<button
+  class="pagination-item"
+  [class.pointer-events-none]="!hasPrevious()"
+  (click)="setPage(curr - 1)"
+>
+  <span class="iconify size-4 carbon--caret-left"></span>
+</button>
+
+@for (idx of pageIndeces(); track idx) {
+  @let isActive = curr === idx;
+  @if (idx) {
+    <button
+      class="pagination-item"
+      [class.pointer-events-none]="isActive"
+      [class.text-blue-500]="isActive"
+      (click)="setPage(idx)"
+    >
+      {{ idx }}
+    </button>
+  } @else {
+    <span class="pagination-item"> ... </span>
+  }
+}
+
+<button
+  class="pagination-item"
+  [class.pointer-events-none]="!hasNext()"
+  (click)="setPage(curr + 1)"
+>
+  <span class="iconify size-4 carbon--caret-right"></span>
+</button>

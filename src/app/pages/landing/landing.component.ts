@@ -7,7 +7,7 @@ import { ProductService } from '@/lib/services/product.service';
 import type { Product } from '@/lib/types/product.schema';
 
 @Component({
-  selector: 'landing',
+  selector: 'landing-page',
   imports: [Banner, AboutSection, Card, CurrencyPipe],
   templateUrl: './landing.component.html',
 })

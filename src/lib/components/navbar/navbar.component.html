@@ -5,12 +5,12 @@
     </div>
     <ul class="col-span-2 flex flex-1 items-center justify-center gap-8">
       @for (link of navLinks; track link) {
-        <li>
-          <a
-            class="rounded-lg px-5 py-2 font-medium text-green-950 transition-all duration-300 hover:bg-green-100"
-            [href]="link.href"
-            >{{ link.label }}</a
-          >
+        <li
+          class="rounded-lg px-5 py-2 text-center transition-all duration-300 has-[:hover]:bg-green-100"
+        >
+          <a class="font-medium text-green-950" [href]="link.href">{{
+            link.label
+          }}</a>
         </li>
       }
     </ul>

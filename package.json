@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run build && node dist/fresh-blend/server/server.mjs",
     "build": "ng build",
     "watch": "ng build --watch --poll 500 --configuration development",
     "test": "ng test",
