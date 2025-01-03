@@ -24,6 +24,6 @@ export class Card {
     cn('py-2 px-3 flex flex-col gap-3 text-sm', this.c())
   );
   @HostBinding('class') get className(): string {
-    return cn('flex flex-col shadow', this.class());
+    return cn('flex flex-col shadow rounded-lg', this.class());
   }
 }

@@ -6,7 +6,9 @@
     <h2 class="text-center font-style text-6xl font-semibold">
       Popular Products
     </h2>
-    <div class="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto">
+    <div
+      class="no-scrollbar flex snap-x snap-mandatory scroll-p-2 gap-6 overflow-x-auto p-2"
+    >
       @for (product of popularProducts; track product.id) {
         <card class="w-72 shrink-0 snap-start">
           <ng-template #illustration>
@@ -18,6 +20,9 @@
           </ng-template>
           <h5 class="text-xl font-semibold">{{ product.name }}</h5>
           <p class="line-clamp-2 h-10">{{ product.description }}</p>
+          <p>
+            Vote: <span class="text-lg font-medium">{{ product.vote }}</span>
+          </p>
           <p class="text-lg text-orange-600">
             {{ product.price | currency: 'IDR' : 'symbol' : '1.0' }}
           </p>

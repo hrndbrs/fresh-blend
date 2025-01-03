@@ -1,7 +1,12 @@
-export interface FetchResponse<T> {
-  data: T;
-  pagination: Pagination;
-}
+export type FetchResponse<T> =
+  T extends Array<any>
+    ? {
+        data: T;
+        pagination: Pagination;
+      }
+    : {
+        data: T;
+      };
 
 export interface Pagination {
   page: number;

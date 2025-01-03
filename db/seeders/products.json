@@ -4,7 +4,7 @@
     "name": "Apple Juice",
     "description": "Freshly squeezed apple juice made from handpicked, crisp, and juicy apples. Perfect for any time of the day, this refreshing beverage has no added sugar or preservatives, making it a natural choice for health-conscious individuals. Enjoy the delightful balance of sweetness and tartness in every sip.",
     "thumbnail": "https://images.unsplash.com/photo-1509459331813-67a0c10e527c?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "purchased": 250,
+    "vote": 250,
     "price": 19000,
     "createdAt": "2024-12-01T10:30:00Z"
   },
@@ -13,7 +13,7 @@
     "name": "Orange Juice",
     "description": "A delicious and tangy orange juice packed with Vitamin C to boost your immune system. Made from the finest, sun-ripened oranges, it delivers a vibrant, citrusy burst of flavor with every sip. This classic drink is a refreshing companion for breakfast or any time you need a revitalizing pick-me-up.",
     "thumbnail": "https://images.unsplash.com/photo-1603803721487-97009eb7f8db?q=80&w=2698&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "purchased": 300,
+    "vote": 300,
     "price": 20000,
     "createdAt": "2024-12-02T12:00:00Z"
   },
@@ -22,7 +22,7 @@
     "name": "Grape Juice",
     "description": "Experience the rich and robust flavor of our grape juice, crafted from the freshest, plumpest grapes harvested at their peak ripeness. This juice is naturally sweet and full of antioxidants, making it not only delicious but also a healthy choice. Whether as a mid-day treat or paired with a meal, it\u2019s always a crowd-pleaser.",
     "thumbnail": "https://images.unsplash.com/photo-1542282910-7337bcfea235?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEdyYXBlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D",
-    "purchased": 180,
+    "vote": 180,
     "price": 22000,
     "createdAt": "2024-12-03T08:45:00Z"
   },
@@ -31,7 +31,7 @@
     "name": "Mango Juice",
     "description": "Indulge in the sweet and tropical flavors of our mango juice, made from succulent, golden mangoes. This juice is thick, creamy, and bursting with a fruity aroma that transports you straight to the tropics. Ideal as a refreshing drink on a sunny day or as a dessert alternative for mango lovers.",
     "thumbnail": "https://images.unsplash.com/photo-1697642452436-9c40773cbcbb?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "purchased": 320,
+    "vote": 320,
     "price": 23000,
     "createdAt": "2024-12-04T09:15:00Z"
   },
@@ -40,7 +40,7 @@
     "name": "Pineapple Juice",
     "description": "Our pineapple juice is a tropical delight, offering the perfect blend of sweetness and tanginess. Sourced from freshly harvested pineapples, this juice is rich in enzymes and nutrients. Whether served chilled or used as a mixer in your favorite cocktail, it guarantees a burst of refreshing flavor.",
     "thumbnail": "https://images.unsplash.com/photo-1596392301391-e8622b210bd4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHBpbmVhcHBsZSUyMGp1aWNlfGVufDB8fDB8fHww",
-    "purchased": 210,
+    "vote": 210,
     "price": 20000,
     "createdAt": "2024-12-05T14:30:00Z"
   },
@@ -49,7 +49,7 @@
     "name": "Strawberry Juice",
     "description": "A vibrant and luscious strawberry juice made from handpicked, ripe strawberries. It\u2019s a refreshing and naturally sweet drink that captures the essence of summer in every sip. Packed with vitamins and antioxidants, it\u2019s a guilt-free indulgence that pairs perfectly with breakfast or as a refreshing snack.",
     "thumbnail": "https://images.unsplash.com/photo-1647275485937-890ba327b0ae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "purchased": 275,
+    "vote": 275,
     "price": 25000,
     "createdAt": "2024-12-06T11:20:00Z"
   },
@@ -58,7 +58,7 @@
     "name": "Pomegranate Juice",
     "description": "A powerful blend of taste and nutrition, our pomegranate juice is made from the finest, ruby-red pomegranates. Rich in antioxidants and naturally sweet, this juice not only tastes great but also supports heart health and overall well-being. Enjoy its exotic flavor and refreshing taste anytime.",
     "thumbnail": "https://images.unsplash.com/photo-1603028769333-009800f4e059?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9tZWdyYW5hdGUlMjBqdWljZXxlbnwwfHwwfHx8MA%3D%3D",
-    "purchased": 190,
+    "vote": 190,
     "price": 26000,
     "createdAt": "2024-12-07T13:10:00Z"
   },
@@ -67,7 +67,7 @@
     "name": "Watermelon Juice",
     "description": "Our watermelon juice is the epitome of hydration, made from juicy, ripe watermelons. With a naturally sweet and refreshing taste, it\u2019s a perfect thirst-quencher on hot days. Low in calories and packed with vitamins, it\u2019s the ultimate guilt-free refreshment for any time of day.",
     "thumbnail": "https://images.unsplash.com/photo-1652780201271-cbf3f4541c0d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2F0ZXJtZWxvbiUyMGp1aWNlfGVufDB8fDB8fHww",
-    "purchased": 230,
+    "vote": 230,
     "price": 21000,
     "createdAt": "2024-12-08T15:45:00Z"
   },
@@ -76,7 +76,7 @@
     "name": "Lemon Juice",
     "description": "Zesty and invigorating, our lemon juice offers a refreshing burst of citrusy goodness. Made from freshly squeezed lemons, it\u2019s perfect as a standalone drink or a versatile ingredient in various recipes. Its tangy flavor is a natural pick-me-up for any occasion.",
     "thumbnail": "https://images.unsplash.com/photo-1596434837496-c8789f1a33d3?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxlbW9uJTIwanVpY2V8ZW58MHx8MHx8fDA%3D",
-    "purchased": 210,
+    "vote": 210,
     "price": 20000,
     "createdAt": "2024-12-09T10:00:00Z"
   },
@@ -85,7 +85,7 @@
     "name": "Kiwi Juice",
     "description": "Exotic and tangy, our kiwi juice is made from the finest, handpicked kiwis. With its unique taste and vibrant green color, it\u2019s not only delicious but also a feast for the eyes. Packed with Vitamin C and other nutrients, it\u2019s a refreshing and healthy treat.",
     "thumbnail": "https://images.unsplash.com/photo-1541591425126-4e6dcf84b386?q=80&w=2760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "purchased": 175,
+    "vote": 175,
     "price": 22000,
     "createdAt": "2024-12-10T12:30:00Z"
   },
@@ -94,7 +94,7 @@
     "name": "Cranberry Juice",
     "description": "A tart and tangy cranberry juice made from high-quality cranberries. Known for its health benefits, this juice is a perfect choice for those looking for a refreshing drink with a slightly sharp edge. Enjoy it on its own or mix it into your favorite cocktail.",
     "thumbnail": "https://images.unsplash.com/photo-1506802913710-40e2e66339c9?q=80&w=2362&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "purchased": 195,
+    "vote": 195,
     "price": 25000,
     "createdAt": "2024-12-11T11:00:00Z"
   },
@@ -103,7 +103,7 @@
     "name": "Peach Juice",
     "description": "Smooth and luscious peach juice made from ripe, sun-kissed peaches. This juice offers a delightful combination of natural sweetness and a subtle tanginess. It\u2019s the perfect choice for those who enjoy a creamy, full-bodied beverage that pairs well with light snacks.",
     "thumbnail": "https://img.freepik.com/free-photo/nectarines-with-juice-white-table-high-angle-view_176474-8782.jpg?t=st=1734196944~exp=1734200544~hmac=bcf4a3f10b20f853b4a0320dc07a0f6bbd5d91b57bb145f0cd1a59107d8d1248&w=1480",
-    "purchased": 210,
+    "vote": 210,
     "price": 24000,
     "createdAt": "2024-12-12T14:50:00Z"
   },
@@ -112,7 +112,7 @@
     "name": "Blackberry Juice",
     "description": "Bold and rich blackberry juice with a touch of sweetness, made from plump, handpicked blackberries. This juice is packed with flavor and nutrients, making it a healthy and indulgent choice. Perfect as a refreshing drink or a complement to a hearty meal.",
     "thumbnail": "https://images.unsplash.com/photo-1559159281-a47932953fcd?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJsYWNrYmVycnklMjBqdWljZXxlbnwwfHwwfHx8Mg%3D%3D",
-    "purchased": 160,
+    "vote": 160,
     "price": 22000,
     "createdAt": "2024-12-13T08:20:00Z"
   },
@@ -121,7 +121,7 @@
     "name": "Guava Juice",
     "description": "Tropical guava juice made from sweet, pink guavas. Known for its unique flavor and aroma, this juice is a refreshing treat for anyone looking for an exotic twist. It\u2019s rich in Vitamin C and adds a touch of summer to your day, no matter the season.",
     "thumbnail": "https://img.freepik.com/free-photo/guava-fruit-still-life_23-2151551103.jpg?t=st=1734196899~exp=1734200499~hmac=16055234fd6f4684ed6e6ecc9f822c798b8f7d1867cfb823cf5442858d6f2075&w=1800",
-    "purchased": 250,
+    "vote": 250,
     "price": 24000,
     "createdAt": "2024-12-14T16:00:00Z"
   },
@@ -130,7 +130,7 @@
     "name": "Papaya Juice",
     "description": "Sweet and creamy papaya juice with a tropical twist. Made from fresh, ripened papayas, this juice is a rich source of vitamins and enzymes that aid digestion. It\u2019s a soothing drink that makes a perfect addition to your morning routine or a relaxing evening.",
     "thumbnail": "https://img.freepik.com/free-photo/fresh-papaya-juice-glass-with-papaya-fruit-wooden-table-black-background-ai-generative_123827-24233.jpg?t=st=1734196985~exp=1734200585~hmac=505051873951922eb03c2ff69364e3445bc5060f34ed67b0b53b641cd7dd47f3&w=1480",
-    "purchased": 140,
+    "vote": 140,
     "price": 21000,
     "createdAt": "2024-12-15T09:40:00Z"
   },
@@ -139,7 +139,7 @@
     "name": "Passion Fruit Juice",
     "description": "Exotic and tangy, our passion fruit juice is made from ripe passion fruits that bring a unique tart and sweet flavor. Packed with antioxidants and nutrients, it\u2019s perfect for anyone looking for a refreshing, healthy drink to start their day.",
     "thumbnail": "https://img.freepik.com/free-photo/glass-passion-fruit-juice-place-white-marble-floor_1150-35241.jpg?t=st=1734197040~exp=1734200640~hmac=fde1715099a1b4d821a72fa8623454a0f143b066310a3cbb41bbfaaf19ccf561&w=1480",
-    "purchased": 220,
+    "vote": 220,
     "price": 25000,
     "createdAt": "2024-12-16T10:00:00Z"
   },
@@ -148,7 +148,7 @@
     "name": "Tomato Juice",
     "description": "Rich and savory tomato juice, made from vine-ripened tomatoes. This juice is a great way to enjoy the benefits of tomatoes in a refreshing, drinkable form. It\u2019s perfect for adding a unique touch to your daily routine.",
     "thumbnail": "https://img.freepik.com/free-photo/two-glass-cups-tomato-juice-wooden-board_114579-55577.jpg?t=st=1734197104~exp=1734200704~hmac=f9956d0b651e62fff0a454ab62c37b41330a33a07fee474efbf84bc122972676&w=1380",
-    "purchased": 190,
+    "vote": 190,
     "price": 20000,
     "createdAt": "2024-12-17T12:00:00Z"
   },
@@ -157,7 +157,7 @@
     "name": "Blueberry Juice",
     "description": "Sweet and slightly tart blueberry juice, made from fresh blueberries. Packed with antioxidants and Vitamin C, it\u2019s a healthy and delicious drink that pairs well with breakfast or as a refreshing mid-day snack.",
     "thumbnail": "https://img.freepik.com/free-photo/blueberry-smoothie-close-up-shot_53876-30506.jpg?t=st=1734197172~exp=1734200772~hmac=eb89940fe954587a6a29427eea1eb88f0cc761b94f90123891592c59ea9580a2&w=740",
-    "purchased": 180,
+    "vote": 180,
     "price": 24000,
     "createdAt": "2024-12-18T11:30:00Z"
   },
@@ -166,7 +166,7 @@
     "name": "Pear Juice",
     "description": "Smooth and sweet pear juice made from ripe, juicy pears. This juice offers a gentle sweetness and a subtle, refreshing taste that makes it perfect for those who love a milder, yet flavorful drink.",
     "thumbnail": "https://img.freepik.com/free-photo/side-view-fresh-ripe-pears-pear-halves-with-glass-lemonade-black-wooden-background_141793-8083.jpg?t=st=1734197213~exp=1734200813~hmac=4efc82faee4048e8e1b8e858e055b9b4dbb30b1a89d43bb6fff674aa4e912463&w=740",
-    "purchased": 220,
+    "vote": 220,
     "price": 21000,
     "createdAt": "2024-12-19T14:00:00Z"
   },
@@ -175,7 +175,7 @@
     "name": "Lychee Juice",
     "description": "Exotic lychee juice with a delicate floral flavor. Made from sweet lychees, this juice is refreshing and naturally sweet. Enjoy a taste of the tropics with every sip, perfect for a hot summer day.",
     "thumbnail": "https://img.freepik.com/free-photo/lychee-juice-lychee-fruit_1150-13686.jpg?t=st=1734197236~exp=1734200836~hmac=c8079bd182c5f1fb0f0d4bfae7da95d647b2e9f7999697cb23e0617aeafbed1e&w=1380",
-    "purchased": 200,
+    "vote": 200,
     "price": 23000,
     "createdAt": "2024-12-20T13:30:00Z"
   }

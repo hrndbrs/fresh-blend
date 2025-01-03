@@ -16,12 +16,12 @@ export class Navbar {
 
   @HostBinding('class') get className(): string {
     return cn(
-      'fixed z-[1000] top-0 w-full duration-300 transition-colors',
+      'fixed z-[1000] top-0 w-full duration-300 transition-all',
       this.class
     );
   }
 
-  @HostListener('window:scroll', ['$event']) onScroll() {
+  @HostListener('window:scroll', []) onScroll() {
     if (window.scrollY) {
       this.el.nativeElement.classList.add('bg-cyan-50', 'shadow-xl');
     } else {

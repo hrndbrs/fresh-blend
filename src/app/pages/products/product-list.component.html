@@ -13,7 +13,10 @@
 
     <div class="flex flex-wrap justify-center gap-x-6 gap-y-10">
       @for (product of products; track product.id) {
-        <card class="w-full max-w-96 shrink-0">
+        <card
+          class="w-full max-w-96 shrink-0 cursor-pointer"
+          [routerLink]="'/products/' + product.id"
+        >
           <ng-template #illustration>
             <img
               [src]="product.thumbnail"

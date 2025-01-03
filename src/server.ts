@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import { join } from 'node:path';
 import bootstrap from './main.server';
-import router from './app/api/routes';
+import router from './api/routes';
 import { browserDistFolder, serverDistFolder } from './lib/constants/paths';
 
 dotenv.config();

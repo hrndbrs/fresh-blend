@@ -5,5 +5,5 @@ export interface Product extends BaseModel {
   description: string;
   thumbnail: string;
   price: number;
-  purchased: number;
+  vote: number;
 }

@@ -1,8 +1,12 @@
 # Fresh Blend
 
-Hernando Informatika 1003240009
+Hernando Borosi
 <br>
+Informatika
 <br>
+1003240009
+<br>
+
 **Fresh Blend** adalah aplikasi website full-stack yang dibangun menggunakan **Angular v19**, **Express v4**, dan **TailwindCSS v3.4.16** dengan bahasa pemrograman **TypeScript**. Website ini menyajikan landing page informatif dan halaman daftar produk dengan fitur pagination.
 
 ---
@@ -12,20 +16,25 @@ Hernando Informatika 1003240009
 1. **Landing Page**
 
    - Menyediakan informasi tentang Fresh Blend.
-   - Menampilkan daftar produk populer.
+   - Menampilkan daftar produk populer beserta jumlah upvotenya.
 
-2. **Halaman List Product**
+2. **Product List Page**
 
    - Menampilkan daftar lengkap produk.
    - Pagination untuk navigasi antar halaman produk.
 
-3. **Arsitektur MVC**
+3. **Product Detail Page**
+
+   - Menampilkan detail dari produk berdasarkan route param id.
+   - Menampilkan tombol untuk meng-upvote produk
+
+4. **Arsitektur MVC**
 
    - Aplikasi dibangun menggunakan arsitektur Model-View-Controller.
 
-4. **Data Produk**
+5. **Database**
 
-   - Disimpan dalam format JSON.
+   - MySQL dengan ORM Sequelize
 
 ---
 
@@ -35,7 +44,7 @@ Hernando Informatika 1003240009
 - **Backend**: Express v4
 - **Styling**: TailwindCSS v3.4.16
 - **Bahasa**: TypeScript
-- **Data Storage**: JSON
+- **Database**: MySQL, Sequelize
 
 ---
 
@@ -61,13 +70,28 @@ Hernando Informatika 1003240009
    npm install
    ```
 
-3. **Build dan Jalankan Aplikasi**
+3. **Set Environment Variables**
+
+- DB_DIALECT -> Database relasional yang digunakan (cth: mysql)
+- DB_HOST -> IP Address dimana database dijalankan (cth: 127.0.0.1)
+- DB_USERNAME -> Username database (cth: root)
+- DB_PASSWORD -> Password database
+- DB_PORT -> Port database (cth: 3306)
+- DB_NAME -> Nama database
+
+4. **Jalankan File Migration**
+
+   ```bash
+   npm run migrate:up
+   ```
+
+5. **Build dan Jalankan Aplikasi**
 
    ```bash
    npm start
    ```
 
-4. **Akses Aplikasi**
+6. **Akses Aplikasi**
    - Secara default, aplikasi dapat diakses melalui: `http://localhost:4000`
 
 ---
@@ -77,66 +101,47 @@ Hernando Informatika 1003240009
 ```
 .
 ├── README.md
-├── angular.json            # Konfigurasi proyek Angular
+├── .env.example                          # List environment variable yang digunakan dan contoh valuenya
+├── angular.json                          # Konfigurasi proyek Angular
+│
 ├── db
-│   └── products.json       # Data produk disimpan dalam format JSON
-├── package.json            # File konfigurasi npm
-├── postcss.config.js       # Konfigurasi PostCSS untuk TailwindCSS
+│   ├── migrations/                       # Folder file migration
+│   └── index.ts                          # File yang dijalankan untuk melakukan migrasi database
+│
+├── package.json                          # File konfigurasi npm
+├── postcss.config.js                     # Konfigurasi PostCSS untuk TailwindCSS
+│
 ├── src
-│   ├── app                 # Folder utama aplikasi Angular
-│   │   ├── api             # API backend yang digunakan di frontend
-│   │   │   ├── controllers
-│   │   │   │   └── product.controller.ts  # Controller produk
-│   │   │   ├── middlewares
-│   │   │   │   └── error-handler.middleware.ts # Middleware error handler
-│   │   │   └── routes
-│   │   │       ├── index.ts              # Entrypoint untuk /api
-│   │   │       └── product.route.ts      # Routing untuk /products
+│   ├── api                               # Folder yang menyimpan handler backend api
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── middlewares/
+│   │   └── routes
+│   │
+│   ├── app                               # Folder utama aplikasi Angular
 │   │   ├── app.component.html            # Root HTML untuk komponen Angular
 │   │   ├── app.component.ts              # Root TypeScript untuk Angular
 │   │   ├── app.config.server.ts          # Konfigurasi server Angular
 │   │   ├── app.config.ts                 # Konfigurasi utama Angular
 │   │   ├── app.routes.server.ts          # Routing server-side rendering
 │   │   ├── app.routes.ts                 # Routing client-side
-│   │   └── pages
-│   │       ├── landing                   # Halaman landing page
-│   │       │   ├── landing.component.html
-│   │       │   └── landing.component.ts
-│   │       └── products                  # Halaman daftar produk
-│   │           ├── product-list.component.html
-│   │           └── product-list.component.ts
+│   │   └── pages/                        # Folder yang menyimpan komponen halaman
+│   │
 │   ├── index.html                        # HTML utama
-│   ├── lib                               # Library komponen
-│   │   ├── components
-│   │   │   ├── banner                    # Komponen banner
-│   │   │   │   ├── banner.component.html
-│   │   │   │   └── banner.component.ts
-│   │   │   ├── card                      # Komponen card
-│   │   │   │   ├── card.component.html
-│   │   │   │   └── card.component.ts
-│   │   │   ├── footer                    # Komponen footer
-│   │   │   │   ├── footer.component.html
-│   │   │   │   └── footer.component.ts
-│   │   │   ├── navbar                    # Komponen navbar
-│   │   │   │   ├── navbar.component.html
-│   │   │   │   └── navbar.component.ts
-│   │   │   ├── pagination                # Komponen pagination
-│   │   │   │   ├── pagination.component.css
-│   │   │   │   ├── pagination.component.html
-│   │   │   │   └── pagination.component.ts
-│   │   │   └── sections
-│   │   │       └── landing
-│   │   │           └── about             # Section about untuk landing page
-│   │   │               ├── about.component.html
-│   │   │               └── about.component.ts
-│   │   ├── services
-│   │   │   └── product.service.ts        # Service untuk merequest produk
+│   │
+│   ├── lib
+│   │   ├── components/                   # Folder komponen
+│   │   ├── config/                       # Folder file konfigurasi (database dll.)
+│   │   ├── constants/
+│   │   ├── services/                     # Folder service
 │   │   ├── types/                        # Definisi type untuk Typescript
 │   │   └── utils/                        # Fungsi utilitas
+│   │
 │   ├── main.server.ts                    # Entry point server Express
 │   ├── main.ts                           # Entry point Angular
 │   ├── server.ts                         # Server rendering konfigurasi
 │   └── styles.css                        # Styling utama
+│
 ├── tailwind.config.ts                    # Konfigurasi TailwindCSS
 ├── tsconfig.app.json                     # Konfigurasi TypeScript untuk aplikasi
 └── tsconfig.json                         # Konfigurasi utama TypeScript
